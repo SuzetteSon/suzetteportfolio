@@ -22,8 +22,8 @@ class Home extends Component {
           >
             Github projects
           </Link>
-          <a>Gallary of projects</a>
-          <a>Contact</a>
+          <Link to="/home/github">Gallary of projects</Link>
+          <Link to="/home/github">Contact</Link>
         </nav>
         <header className="App-header">
           <span>
