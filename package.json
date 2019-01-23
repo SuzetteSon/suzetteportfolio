@@ -1,7 +1,8 @@
 {
   "name": "my-portfolio-site",
   "version": "0.1.0",
-  "private": true,"engines": {
+  "private": true,
+  "engines": {
     "npm": "5.7.1",
     "node": "9.5.0"
   },
@@ -29,8 +30,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint": "^5.12.1",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint": "^5.12.1"
   }
 }
