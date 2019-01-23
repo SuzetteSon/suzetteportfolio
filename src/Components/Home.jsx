@@ -29,8 +29,8 @@ class Home extends Component {
           <span>
             Hi, I'm Suzette <br />
             <p className="text">
-              I'm a software developer <br />
-              from South Africa.
+              I'm a software developer, <br />
+              welcome to my portfolio site.
             </p>
           </span>
         </header>
