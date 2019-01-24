@@ -220,6 +220,84 @@ nav a:hover {
   float: left;
 }
 
+/* CAREER */
+
+.career {
+  font-family: Source Sans Pro;
+  width: 100%;
+  padding-left: 20px;
+  border: 2px solid #ebced0;
+  overflow: hidden;
+  margin-top: 10px;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.career h2 {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d5d8df;
+  display: flex;
+  padding-top: 5px;
+  margin-top: 0;
+}
+.udacity {
+  border-bottom: 1px solid #d5d8df;
+  min-height: 400px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.udacity img {
+  width: 500px;
+  float: left;
+}
+.udacity>.title {
+  font-size: 22px;
+  float: right;
+  
+}
+.udacity>.description {
+  font-size: 16px;
+  float: right;
+  width: 45%;
+  text-align: right;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.salt {
+  border-bottom: 1px solid #d5d8df;
+  min-height: 400px;;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.salt a {
+  float: right;
+}
+
+.salt img {
+  width: 500px;
+  float: left;
+}
+.salt>.title {
+  font-size: 22px;
+  float: right;
+  
+}
+.salt>.description {
+  font-size: 16px;
+  float: right;
+  width: 45%;
+  text-align: right;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.salt a {
+  float: right;
+}
+
 /* CONTACT */
 
 .footer {
