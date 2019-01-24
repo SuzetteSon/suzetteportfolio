@@ -11,13 +11,13 @@ import Career from "./Components/Career";
 
 class App extends Component {
 
-  componentDidMount() {
-    scrollToComponent(this.Home, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
-    scrollToComponent(this.AboutMe, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
-    scrollToComponent(this.GithubLinks, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
-    scrollToComponent(this.Career, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
-    scrollToComponent(this.Contact, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
-  }
+  // componentDidMount() {
+  //   scrollToComponent(this.Home, {offset: 0, align: 'top', duration: 500, ease:'inCirc'});
+  //   scrollToComponent(this.AboutMe, {offset: 0, align: 'top', duration: 500, ease:'inCirc'});
+  //   scrollToComponent(this.GithubLinks, { offset: 0, align: 'top', duration: 500, ease:'inCirc'});
+  //   scrollToComponent(this.Career, { offset: 0, align: 'top', duration: 500, ease:'inCirc'});
+  //   scrollToComponent(this.Contact, {offset: 0, align: 'top', duration: 500, ease:'inCirc'});
+  // }
 
   render() {
     return (
@@ -25,7 +25,7 @@ class App extends Component {
         <nav className="nav-bar">
           <Link
             to="/home"
-            onClick={() => scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 1000, ease:'inCube'})}
+            onClick={() => scrollToComponent(this.Home, { offset: -100, align: 'top', duration: 1000, ease:'inCube'})}
           >
             Home
           </Link>
@@ -48,7 +48,7 @@ class App extends Component {
           </Link>
           <Link 
           to="/contact"
-          onClick={() => scrollToComponent(this.Contact, { offset: 4, align: 'top', duration: 1000, ease:'inCube'})}
+          onClick={() => scrollToComponent(this.Contact, { offset: 0, align: 'top', duration: 1000, ease:'inCube'})}
           >Contact</Link>
         </nav>
 

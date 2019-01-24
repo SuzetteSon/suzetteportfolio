@@ -7,6 +7,27 @@ class GithubLinks extends Component {
       <div className="links">
         <h2>Projects and links to Github</h2>
         <div className="links-wrapper">
+          
+          <div className="link">
+            <span className="link-title">Student administrator</span>
+            <br />
+            <img src="./studentadmin.png" alt="screenshot of project" />
+            <br />
+            <span className="link-description"></span>
+            <a href="https://salt-admin.herokuapp.com/">view app via heroku</a>
+            <br />
+          </div>
+          <div className="link">
+            <span className="link-title">Recipe Maker</span>
+            <br />
+            <img src="./recipemaker.png" alt="screenshot of project" />
+            <br />
+            <span className="link-description"></span>
+            <a href="https://github.com/SuzetteSon/recipe-maker">
+              view source code
+            </a>
+            <br />
+          </div>
           <div className="link">
             <span className="link-title">Neighbourhood Maps</span>
             <br />
@@ -46,26 +67,6 @@ class GithubLinks extends Component {
               view source code
             </a>
             </span>
-            <br />
-          </div>
-          <div className="link">
-            <span className="link-title">Student administrator</span>
-            <br />
-            <img src="./studentadmin.png" alt="screenshot of project" />
-            <br />
-            <span className="link-description"></span>
-            <a href="https://salt-admin.herokuapp.com/">view app via heroku</a>
-            <br />
-          </div>
-          <div className="link">
-            <span className="link-title">Recipe Maker</span>
-            <br />
-            <img src="./recipemaker.png" alt="screenshot of project" />
-            <br />
-            <span className="link-description"></span>
-            <a href="https://github.com/SuzetteSon/recipe-maker">
-              view source code
-            </a>
             <br />
           </div>
         </div>

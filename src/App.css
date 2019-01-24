@@ -128,18 +128,19 @@ nav a:hover {
   padding-left: 20px;
   border: 2px solid #ebced0;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 80px;
   justify-content: center;
   padding: 20px;
   margin-bottom: 10px;
 }
-.AboutMe span {
+.AboutMe p {
   margin: 0;
-  min-width: 0;
+  /* min-width: 0;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; */
   padding-left: 15px;
+  width: 60%;
 }
 
 .flag {
@@ -155,9 +156,11 @@ nav a:hover {
 }
 
 .suzPic {
-  float: left;
-  width: 150px;
-  height: 190px;
+  float: right;
+  width: 300px;
+  height: 400px;
+  border: 2px solid  #ebced0;
+  padding: 15px;
   margin-right: 20px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -172,7 +175,7 @@ nav a:hover {
   padding-left: 20px;
   border: 2px solid #ebced0;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 80px;
   justify-content: center;
   padding: 20px;
   margin-bottom: 10px;
@@ -228,7 +231,7 @@ nav a:hover {
   padding-left: 20px;
   border: 2px solid #ebced0;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 80px;
   justify-content: center;
   padding: 20px;
   margin-bottom: 10px;
