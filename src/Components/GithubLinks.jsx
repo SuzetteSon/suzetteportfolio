@@ -3,6 +3,7 @@ import React, { Component } from "react";
 class GithubLinks extends Component {
   render() {
     return (
+      <div className="GithubLinks">
       <div className="links">
         <h2>Projects and links to Github</h2>
         <div className="links-wrapper">
@@ -53,7 +54,7 @@ class GithubLinks extends Component {
             <img src="./studentadmin.png" alt="screenshot of project" />
             <br />
             <span className="link-description"></span>
-            <a href="https://salt-admin.herokuapp.com/">view source code</a>
+            <a href="https://salt-admin.herokuapp.com/">view app via heroku</a>
             <br />
           </div>
           <div className="link">
@@ -88,6 +89,7 @@ class GithubLinks extends Component {
             </li>
           </ul>
         </div>
+      </div>
       </div>
     );
   }
