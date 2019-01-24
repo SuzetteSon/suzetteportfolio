@@ -43,7 +43,7 @@ class App extends Component {
           </Link>
           <Link 
           to="/career"
-          onClick={() => scrollToComponent(this.Career, { offset: -3, align: 'top', duration: 1000, ease:'inCube'})}
+          onClick={() => scrollToComponent(this.Career, { offset: -75, align: 'top', duration: 1000, ease:'inCube'})}
           >Career
           </Link>
           <Link 

@@ -15,7 +15,7 @@ class Career extends Component {
           <img src="./salt.png" alt="salt diploma" />
           <br />
 
-          <a href="UdacityCertificate.pdf">view certificate</a>
+          <a href="https://www.study-at-salt.com/">{"<"}/salt> website</a>
           <br />
         </div>
         <div className="udacity">
@@ -31,7 +31,7 @@ class Career extends Component {
           <img src="./udacity.png" alt="udacity certificate" />
           <br />
 
-          <a href="UdacityCertificate.pdf">view certificate</a>
+          <a href="https://confirm.udacity.com/3FLKKVTK">view certificate</a>
           <br />
         </div>
       </div>

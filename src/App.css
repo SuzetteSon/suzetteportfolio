@@ -266,6 +266,9 @@ nav a:hover {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.udacity a {
+  float: right;
+}
 
 .salt {
   border-bottom: 1px solid #d5d8df;
@@ -303,9 +306,10 @@ nav a:hover {
 .footer {
   width: 100%;
   padding: 1rem;
-  margin: 0.5rem 1rem;
   text-align: center;
   transition: 200ms;
+  border-bottom: 2px solid #ebced0;
+  margin-bottom: 20px;
 }
 
 .contact-icon {
