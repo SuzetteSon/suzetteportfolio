@@ -14,6 +14,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.handleToggleVisib = this.handleToggleVisib.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
+
     this.state = {
       visib: "closed" 
     };
@@ -28,7 +30,12 @@ class App extends Component {
       this.setState({ visib : "" });
 
     }
-}
+  }
+  closeMenu() {
+    this.setState({visib: ""})
+  }
+
+
 
   render() {
     
@@ -41,34 +48,44 @@ class App extends Component {
             <li className="nav__item">
               <Link
                 to="/home"
-                onClick={() => scrollToComponent(this.Home, { offset: -100, align: 'top', duration: 1000, ease:'inCube'})}
+                onClick={() =>  {
+                  scrollToComponent(this.Home, { offset: -100, align: 'top', duration: 1000, ease:'inCube'});
+                  this.closeMenu()
+                  }}
               >
                 Home
               </Link></li>
             <li className="nav__item">
               <Link
                 to="/aboutme"
-                onClick={() => scrollToComponent(this.AboutMe, { offset: -80, align: 'top', duration: 1000, ease:'inCube'})}
+                onClick={() =>  {scrollToComponent(this.AboutMe, { offset: -80, align: 'top', duration: 1000, ease:'inCube'});
+                this.closeMenu()
+                }}
               >
                 About me
               </Link></li>
             <li className="nav__item">
               <Link
               to="/githublinks"
-                onClick={() => scrollToComponent(this.GithubLinks, { offset: -75, align: 'top', duration: 1000, ease:'inCube'})}
+                onClick={() => { scrollToComponent(this.GithubLinks, { offset: -75, align: 'top', duration: 1000, ease:'inCube'});
+                this.closeMenu()
+                }}
               >
                 Projects
               </Link></li>
             <li className="nav__item">
               <Link 
               to="/career"
-              onClick={() => scrollToComponent(this.Career, { offset: -75, align: 'top', duration: 1000, ease:'inCube'})}
+              onClick={() =>  { scrollToComponent(this.Career, { offset: -75, align: 'top', duration: 1000, ease:'inCube'});
+              this.closeMenu()
+              }}
               >Career
               </Link></li>
             <li className="nav__item">
               <Link 
               to="/contact"
-              onClick={() => scrollToComponent(this.Contact, { offset: 0, align: 'top', duration: 1000, ease:'inCube'})}
+              onClick={() =>  {scrollToComponent(this.Contact, { offset: 0, align: 'top', duration: 1000, ease:'inCube'});
+              this.closeMenu()}}
               >Contact</Link></li>
           </ul>
         </nav>

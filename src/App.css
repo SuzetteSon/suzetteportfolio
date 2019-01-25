@@ -384,6 +384,7 @@ nav a:hover {
     position: absolute;
     right: 0;
     padding: 1em;
+    position: fixed;
   }
   
   .header-menu img {
@@ -406,6 +407,8 @@ nav a:hover {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
     width: 200px;
+    overflow: hidden;
+    position: fixed;
   }
   .nav__item {
     display: list-item;
