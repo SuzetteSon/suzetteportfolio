@@ -6,7 +6,7 @@ class Home extends Component {
     return (
       <div className="home">
         
-        <header className="App-header">
+        <div className="App-header">
           <p className="header-title">
             Hi, I'm Suzette </p><br />
             <p className="header-text">
@@ -14,7 +14,7 @@ class Home extends Component {
               welcome to my portfolio site.
             </p>
           
-        </header>
+        </div>
       </div>
     );
   }

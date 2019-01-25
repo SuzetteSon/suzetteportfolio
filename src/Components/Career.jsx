@@ -12,7 +12,7 @@ class Career extends Component {
             School of applied technology fullstack JavaScript Bootcamp 09/2018 - 11/2018
             
           </span>
-          <img src="./salt.png" alt="salt diploma" />
+          <img src="./salt.jpg" alt="salt diploma" />
           <br />
 
           <a href="https://www.study-at-salt.com/">{"<"}/salt> website</a>

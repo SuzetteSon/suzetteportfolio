@@ -11,46 +11,71 @@ import Career from "./Components/Career";
 
 class App extends Component {
 
-  // componentDidMount() {
-  //   scrollToComponent(this.Home, {offset: 0, align: 'top', duration: 500, ease:'inCirc'});
-  //   scrollToComponent(this.AboutMe, {offset: 0, align: 'top', duration: 500, ease:'inCirc'});
-  //   scrollToComponent(this.GithubLinks, { offset: 0, align: 'top', duration: 500, ease:'inCirc'});
-  //   scrollToComponent(this.Career, { offset: 0, align: 'top', duration: 500, ease:'inCirc'});
-  //   scrollToComponent(this.Contact, {offset: 0, align: 'top', duration: 500, ease:'inCirc'});
-  // }
+  constructor(props) {
+    super(props);
+    this.handleToggleVisib = this.handleToggleVisib.bind(this);
+    this.state = {
+      visib: "closed" 
+    };
+  }
+
+
+
+  handleToggleVisib(){
+    if (this.state.visib === "") {
+      this.setState({ visib : "open" });
+    } else {
+      this.setState({ visib : "" });
+
+    }
+}
 
   render() {
+    
+
     return (
       <div className="App">
-        <nav className="nav-bar">
-          <Link
-            to="/home"
-            onClick={() => scrollToComponent(this.Home, { offset: -100, align: 'top', duration: 1000, ease:'inCube'})}
-          >
-            Home
-          </Link>
-          <Link
-            to="/aboutme"
-            onClick={() => scrollToComponent(this.AboutMe, { offset: -80, align: 'top', duration: 1000, ease:'inCube'})}
-          >
-            About me
-          </Link>
-          <Link
-          to="/githublinks"
-            onClick={() => scrollToComponent(this.GithubLinks, { offset: -75, align: 'top', duration: 1000, ease:'inCube'})}
-          >
-            Projects
-          </Link>
-          <Link 
-          to="/career"
-          onClick={() => scrollToComponent(this.Career, { offset: -75, align: 'top', duration: 1000, ease:'inCube'})}
-          >Career
-          </Link>
-          <Link 
-          to="/contact"
-          onClick={() => scrollToComponent(this.Contact, { offset: 0, align: 'top', duration: 1000, ease:'inCube'})}
-          >Contact</Link>
+        <nav id="drawer" className="nav-bar">
+          <ul className={`nav-list ${this.state.visib}`}>
+
+            <li className="nav__item">
+              <Link
+                to="/home"
+                onClick={() => scrollToComponent(this.Home, { offset: -100, align: 'top', duration: 1000, ease:'inCube'})}
+              >
+                Home
+              </Link></li>
+            <li className="nav__item">
+              <Link
+                to="/aboutme"
+                onClick={() => scrollToComponent(this.AboutMe, { offset: -80, align: 'top', duration: 1000, ease:'inCube'})}
+              >
+                About me
+              </Link></li>
+            <li className="nav__item">
+              <Link
+              to="/githublinks"
+                onClick={() => scrollToComponent(this.GithubLinks, { offset: -75, align: 'top', duration: 1000, ease:'inCube'})}
+              >
+                Projects
+              </Link></li>
+            <li className="nav__item">
+              <Link 
+              to="/career"
+              onClick={() => scrollToComponent(this.Career, { offset: -75, align: 'top', duration: 1000, ease:'inCube'})}
+              >Career
+              </Link></li>
+            <li className="nav__item">
+              <Link 
+              to="/contact"
+              onClick={() => scrollToComponent(this.Contact, { offset: 0, align: 'top', duration: 1000, ease:'inCube'})}
+              >Contact</Link></li>
+          </ul>
         </nav>
+
+        <a id="menu" className="header-menu" onClick={this.handleToggleVisib}>
+          <img src="./burger.png" alt="burger menu" />
+        </a> 
 
         {/* <Route exact path="/home" render={() => <Home />} /> */}
         <section ref={(section) => { this.Home = section; }}><Home/></section>

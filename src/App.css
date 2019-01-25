@@ -45,9 +45,13 @@
   padding-left: 100px;
 }
 
+.header-menu img {
+  display: none;
+}
+
 /* Nav */
 
-.nav-bar {
+.nav-list {
   position: fixed;
   background-color: white;
   display: grid;
@@ -58,9 +62,10 @@
   text-align: center;
   padding: 10px;
   padding-top: 15px;
+  margin-top: 0;
 }
 
-nav a {
+.nav__item {
   border-bottom: 2px solid transparent;
   text-decoration: none;
   padding-bottom: 10px;
@@ -68,6 +73,12 @@ nav a {
   font-size: 20px;
   margin-left: auto;
   margin-right: auto;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+
 }
 nav a:hover {
   left: 25%;
@@ -139,7 +150,6 @@ nav a:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; */
-  padding-left: 15px;
   width: 60%;
 }
 
@@ -168,6 +178,34 @@ nav a:hover {
   flex-shrink: 0;
   object-fit: cover;
 }
+.blockquote {
+  min-height: 5em;
+  padding: 50px;
+  font      : 1em/150% sans-serif;
+  position  : relative;
+  
+}
+
+.blockquote::before,
+.blockquote::after {
+  position: absolute;
+  height  : 3rem;
+  font    : 6rem/100% Georgia, "Times New Roman", Times, serif;
+}
+
+.blockquote::before {
+  content: '“';
+  top    : 0.3rem;
+  left   : 0.9rem;
+}
+
+.blockquote::after {
+  content: '”';
+  bottom : 0.3rem;
+  right  : 0.8rem;
+}
+
+/* PROJECTS */
 
 .links {
   font-family: Source Sans Pro;
@@ -221,6 +259,8 @@ nav a:hover {
 .links img {
   width: 500px;
   float: left;
+  border: 2px solid #d5d8df;
+  padding: 15px;
 }
 
 /* CAREER */
@@ -335,7 +375,72 @@ nav a:hover {
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+@media screen and (max-width: 610px) {
+
+
+  .header-menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+  
+  .header-menu img {
+    display: block;
+    width: 30px;
+  }
+  .nav-list {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+  }
+  .nav-list.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    width: 200px;
+  }
+  .nav__item {
+    display: list-item;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    text-align: left;
+    list-style-type: none;
+  }
+  .App-header {
+    min-height: 300px;
+    background-repeat: no-repeat;
+    margin-top: 62px;
+  }
+  .App-header img {
+    width: 100%;
+  }
+  .header-title {
+    font-size: 35px;
+    padding: 0;
+    height: 50px;
+    padding-left: 30px;
+  }
+  .header-text {
+    font-size: 18px;
+    padding: 0;
+    height: 50px;
+    padding-left: 40px;
+    margin: 0;
+  }
+  .AboutMe {
+    margin-top: 0;
+  }
+  .home {
+    height: 300px;
+  }
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */

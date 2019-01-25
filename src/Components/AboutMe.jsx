@@ -12,7 +12,7 @@ class AboutMe extends Component {
             <p>From: Cape Town, South Africa  <img className="flag"  src="./southafrica.jpg" alt="flag of south africa" /> </p>
             <br />
             <p>Hobbies include: podcasts, boardgames, playstation, fika, movies and much more.  </p><br /> 
-            <p>Why programming? I believe I have the passion and motivation 
+            <p className="blockquote">Why programming? I believe I have the passion and motivation 
               to thrive in the ever evolving and growing tech industry. 
               I am curious and learn quickly, I enjoy working in teams and  
               bringing out the best in people. Building great user experiences  
