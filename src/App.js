@@ -7,6 +7,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import Contact from "./Components/Contact";
 import scrollToComponent from 'react-scroll-to-component';
 import Career from "./Components/Career";
+import MetaTags from 'react-meta-tags';
 
 
 class App extends Component {
@@ -21,27 +22,24 @@ class App extends Component {
     };
   }
 
-
-
   handleToggleVisib(){
     if (this.state.visib === "") {
       this.setState({ visib : "open" });
     } else {
       this.setState({ visib : "" });
-
     }
   }
   closeMenu() {
     this.setState({visib: ""})
   }
 
-
-
   render() {
-    
-
     return (
       <div className="App">
+      <MetaTags>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </MetaTags>
+      <div className="container" >
         <nav id="drawer" className="nav-bar">
           <ul className={`nav-list ${this.state.visib}`}>
 
@@ -95,12 +93,12 @@ class App extends Component {
         </a> 
 
         {/* <Route exact path="/home" render={() => <Home />} /> */}
-        <section ref={(section) => { this.Home = section; }}><Home/></section>
-        <section ref={(section) => { this.AboutMe = section; }}><AboutMe/></section>
-        <section ref={(section) => { this.GithubLinks = section; }}><GithubLinks/></section>
-        <section ref={(section) => { this.Career = section; }}><Career /></section>
-        <section ref={(section) => { this.Contact = section; }}><Contact/></section>
-        
+        <section className="first" ref={(section) => { this.Home = section; }}><Home/></section>
+        <section className="second" ref={(section) => { this.AboutMe = section; }}><AboutMe/></section>
+        <section className="third" ref={(section) => { this.GithubLinks = section; }}><GithubLinks/></section>
+        <section className="fourth" ref={(section) => { this.Career = section; }}><Career /></section>
+        <section className="fivth" ref={(section) => { this.Contact = section; }}><Contact/></section>
+        </div>
       </div>
     );
   }
