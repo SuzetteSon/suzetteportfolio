@@ -13,7 +13,26 @@ class GithubLinks extends Component {
             <br />
             <img src="./studentadmin.png" alt="screenshot of project" />
             <br />
-            <span className="link-description"></span>
+            <span className="link-description">
+            An easy, user-friendly (non-excel) student management tool for administrastors built with React and MongoDB.
+            <ol className="link-details">
+                <li>
+                  User Login function
+                </li>
+                <li>
+                  List/Overview of Students
+                </li>
+                <li>
+                  Add a new Student
+                </li>
+                <li>
+                  View/Edit a Student
+                </li>
+                <li>
+                  Archive a Student
+                </li>
+              </ol>
+            </span>
             <a href="https://salt-admin.herokuapp.com/">view app via heroku</a>
             <br />
           </div>
@@ -22,7 +41,22 @@ class GithubLinks extends Component {
             <br />
             <img src="./recipemaker.png" alt="screenshot of project" />
             <br />
-            <span className="link-description"></span>
+            <span className="link-description">A fun, easy way to create and store recipes, built with React.
+            <ol className="link-details">
+                <li>
+                  Overview of Recipes
+                </li>
+                <li>
+                  Search for a Recipe
+                </li>
+                <li>
+                  Add a new Recipe
+                </li>
+                <li>
+                  Delete a Recipe
+                </li>
+              </ol>
+            </span>
             <a href="https://github.com/SuzetteSon/recipe-maker">
               view source code
             </a>
