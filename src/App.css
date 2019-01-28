@@ -150,7 +150,7 @@ nav a:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; */
-  width: 60%;
+  width: 50%;
 }
 
 .flag {
@@ -302,7 +302,7 @@ nav a:hover {
 .udacity>.description {
   font-size: 16px;
   float: right;
-  width: 45%;
+  width: 40%;
   text-align: right;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -333,7 +333,7 @@ nav a:hover {
 .salt>.description {
   font-size: 16px;
   float: right;
-  width: 45%;
+  width: 40%;
   text-align: right;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -346,11 +346,12 @@ nav a:hover {
 
 .footer {
   width: 100%;
-  padding: 1rem;
   text-align: center;
   transition: 200ms;
   border-bottom: 2px solid #ebced0;
   margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .contact-icon {
@@ -373,6 +374,9 @@ nav a:hover {
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
+.first, .second, .third, .fourth, .fivth {
+  width: 100%;
+}
 
 @media screen and (max-width: 610px) {
 
@@ -380,11 +384,6 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
   }
-
-  .first, .second, .third, .fourth, .fivth {
-    width: 100%;
-  }
-
   .header-menu {
     display: inline-block;
     position: absolute;
@@ -459,6 +458,7 @@ nav a:hover {
   .blockquote {
     padding: 0;
     padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .home {
@@ -467,25 +467,117 @@ nav a:hover {
     padding: 10px;
   }
   .suzPic {
-    width: 100px;
-    height: 150px;
+    width: 190px;
+    height: 250px;
     padding: 5px;
+    margin-right: 20px;
+    float: none;
+    margin-left: 20px;
   }
+
+  .aftertext {
+    color: #4d4c4c;
+  }
+
+  .podcast {
+    text-align: center;
+    
+  }
+  
   .links {
     margin: 10px;
   }
+  .links-wrapper {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .link {
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    min-height: 260px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+  }
+  .link a {
+    float: unset;
+    color: #4d4c4c;
+  }
+  .link-title {
+    float: unset;
+  }
+  .link-description, .link-details {
+    width: 100%;
+    color: #4d4c4c;
+    float: unset;
+    padding: 5px;
+  }
   .udacity img, .links img {
     max-width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: unset;
+  }
+  .salt, .udacity {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .salt>.title {
+    float: unset;
+  }
+  .salt>.description {
+    width: 100%;
+    color: #4d4c4c;
+
   }
 
   .salt img {
     max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .salt a {
+    float: unset;
+    color: #4d4c4c;
+  }
+  .udacity>.title {
+    float: unset;
+  }
+  .udacity>.description {
+    width: 100%;
+    color: #4d4c4c;
 
   }
+
+  .udacity img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .udacity a {
+    float: unset;
+    color: #4d4c4c;
+  }
+  
   .career {
     margin: 10px;
 
   }
+  .footer {
+    width: 100%;
+  }
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+  .contact-icon {
+    width: 50px;
+    margin: 0;
+  }
+ 
+
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */

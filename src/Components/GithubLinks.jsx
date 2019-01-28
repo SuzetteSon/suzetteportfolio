@@ -36,7 +36,7 @@ class GithubLinks extends Component {
             <span className="link-description">
               Final project for Udacity Google Front-end Developer Nanodegree. The instructions
               were as follows:
-              <ol>
+              <ol className="link-details">
                 <li>
                   Use React and Google Maps API
                 </li>
